@@ -31,4 +31,15 @@ public class DogHouseTest {
         // Then
         DogHouse.getNumberOfDogs();
     }
+
+    @Test
+    public void addDogTest(){
+        // given
+        Dog dog = new Dog(null, null, 7);
+        // when
+        DogHouse.add(dog);
+
+        // then
+
+    }
 }

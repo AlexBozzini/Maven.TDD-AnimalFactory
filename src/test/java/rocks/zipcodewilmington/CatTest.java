@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import rocks.zipcodewilmington.animals.Animal;
 import rocks.zipcodewilmington.animals.Cat;
+import rocks.zipcodewilmington.animals.Mammal;
 
 import java.util.Date;
 
@@ -11,7 +12,7 @@ import java.util.Date;
  * @author leon on 4/19/18.
  */
 public class CatTest {
-    // TODO - Create tests for `void setName(String name)`
+    // sTODO - Create tests for `void setName(String name)`
     // TODO - Create tests for `speak`
     // TODO - Create tests for `setBirthDate(Date birthDate)`
     // TODO - Create tests for `void eat(Food food)`
@@ -104,6 +105,13 @@ public class CatTest {
     public void animalInheritanceTest(){
         Cat cat = new Cat (null, null, null);
         Assert.assertTrue(cat instanceof Animal);
+    }
+
+    @Test
+    public void mammalInheritanceTest(){
+        Cat cat = new Cat (null, null, null);
+        Assert.assertTrue(cat instanceof Mammal);
+
     }
 
 }
